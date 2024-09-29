@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal portfolio showcasing skills, projects, and contact information."
+    />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1 class="logo">Ber<mark class="logo-second">Rich.</mark></h1>
+
+      <input type="checkbox" id="toggle" class="toggle-checkbox" />
+      <label for="toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="navbar-top">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <aside class="sidebar">
+        <label for="toggle" class="close-btn">x</label>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </aside>
+    </header>
+
+    <main>
+      <section id="about" class="about">
+        <div class="description">
+          <p class="section-header">Get To Know</p>
+          <h1 class="section-title">About Me</h1>
+          <p>
+            I'm an Informatics student at Bandung Institute of Technology,
+            passionate about solving problems with technology. I enjoy working
+            on web development, algorithms, and backend systems, always eager to
+            learn and improve my skills. My goal is to build innovative
+            solutions and grow as a developer.
+          </p>
+        </div>
+
+        <div class="avatar">
+          <img src="assets/avatar.png" alt="my photos" />
+        </div>
+      </section>
+
+      <section id="skills" class="skills">
+        <p class="section-header">Here Are My</p>
+        <h1 class="section-title">Skills</h1>
+        <div class="skill-slider-container">
+          <!-- First Slider -->
+          <div
+            class="slider"
+            style="--width: 5rem; --height: 5rem; --quantity: 6; --f-size: 1rem"
+          >
+            <div class="slider-list">
+              <div class="slider-item" style="--position: 1">
+                <a
+                  href="https://en.cppreference.com/w/c/language"
+                  target="_blank"
+                >
+                  <img src="assets/skills/c.png" alt="c logo" />
+                  <p class="link-text">C</p>
+                </a>
+              </div>
+              <div class="slider-item" style="--position: 2">
+                <a
+                  href="https://en.cppreference.com/w/cpp/language"
+                  target="_blank"
+                >
+                  <img src="assets/skills/c++.png" alt="c++ logo" />
+                  <p class="link-text">C++</p>
+                </a>
+              </div>
+              <div class="slider-item" style="--position: 3">
+                <a href="https://flet.dev/docs/" target="_blank">
+                  <img src="assets/skills/flet.png" alt="flet logo" />
+                  <p class="link-text">Flet</p>
+                </a>
+              </div>
+              <div class="slider-item" style="--position: 4">
+                <a href="https://github.com" target="_blank">
+                  <img src="assets/skills/github.png" alt="github logo" />
+                  <p class="link-text">GitHub</p>
+                </a>
+              </div>
+              <div class="slider-item" style="--position: 5">
+                <a href="https://gitlab.com" target="_blank">
+                  <img src="assets/skills/gitlab.png" alt="gitlab logo" />
+                  <p class="link-text">GitLab</p>
+                </a>
+              </div>
+              <div class="slider-item" style="--position: 6">
+                <a href="https://go.dev" target="_blank">
+                  <img src="assets/skills/go.png" alt="go logo" />
+                  <p class="link-text">GitLab</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- second slider -->
+          <div
+            class="slider"
+            style="--width: 5rem; --height: 5rem; --quantity: 5; --f-size: 1rem"
+            reverse="true"
+          >
+            <div class="slider-list">
+              <div class="slider-item" style="--position: 1">
+                <a href="https://gradle.org/" target="_blank">
+                  <img src="assets/skills/gradle.png" alt="gradle logo" />
+                  <p class="link-text">Gradle</p>
+                </a>
+              </div>
+              <div class="slider-item" style="--position: 2">
+                <a href="https://www.java.com/en/" target="_blank">
+                  <img src="assets/skills/java.png" alt="java logo" />
+                  <p class="link-text">Java</p>
+                </a>
+              </div>
+              <div class="slider-item" style="--position: 3">
+                <a href="https://mariadb.org/" target="_blank">
+                  <img src="assets/skills/mariaDB.png" alt="mariaDB logo" />
+                  <p class="link-text">MariaDB</p>
+                </a>
+              </div>
+              <div class="slider-item" style="--position: 4">
+                <a href="https://nextjs.org/" target="_blank">
+                  <img src="assets/skills/next-js.png" alt="next-js logo" />
+                  <p class="link-text">Next.js</p>
+                </a>
+              </div>
+              <div class="slider-item" style="--position: 5">
+                <a href="https://www.postgresql.org/" target="_blank">
+                  <img
+                    src="assets/skills/postgreSQL.png"
+                    alt="postgreSQL logo"
+                  />
+                  <p class="link-text">PostgreSQL</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- third slider -->
+          <div
+            class="slider"
+            style="--width: 5rem; --height: 5rem; --quantity: 6; --f-size: 1rem"
+          >
+            <div class="slider-list">
+              <div class="slider-item" style="--position: 1">
+                <a href="https://www.prisma.io/" target="_blank">
+                  <img src="assets/skills/prisma.png" alt="prisma logo" />
+                  <p class="link-text">Prisma</p>
+                </a>
+              </div>
+              <div class="slider-item" style="--position: 2">
+                <a href="https://www.python.org" target="_blank">
+                  <img src="assets/skills/python.png" alt="python logo" />
+                  <p class="link-text">Python</p>
+                </a>
+              </div>
+              <div class="slider-item" style="--position: 3">
+                <a href="https://react.dev/" target="_blank">
+                  <img src="assets/skills/react.png" alt="react logo" />
+                  <p class="link-text">React</p>
+                </a>
+              </div>
+              <div class="slider-item" style="--position: 4">
+                <a href="https://www.sqlite.org" target="_blank">
+                  <img src="assets/skills/SQLite.png" alt="SQLite logo" />
+                  <p class="link-text">SQLite</p>
+                </a>
+              </div>
+              <div class="slider-item" style="--position: 5">
+                <a href="https://tailwindcss.com/" target="_blank">
+                  <img src="assets/skills/tailwind.png" alt="tailwind logo" />
+                  <p class="link-text">Tailwind</p>
+                </a>
+              </div>
+              <div class="slider-item" style="--position: 6">
+                <a href="https://www.typescriptlang.org/" target="_blank">
+                  <img
+                    src="assets/skills/typescript.png"
+                    alt="typescript logo"
+                  />
+                  <p class="link-text">Typescript</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects">
+        <p class="section-header">Browse My Recent</p>
+        <h1 class="section-title">Projects</h1>
+
+        <div class="projects-container">
+          <!-- first project -->
+          <div class="project-card">
+            <div class="card-image">
+              <img src="assets/projects/expedite.png" alt="" />
+            </div>
+            <div class="card-content">
+              <h3>Expedite</h3>
+              <p>
+                Implement company website for Expedite Development using NextJS
+                as full stack solution and prisma as orm to store portofolio
+                data
+              </p>
+
+              <div
+                class="slider"
+                reverse="true"
+                style="
+                  --width: 3rem;
+                  --height: 3rem;
+                  --quantity: 5;
+                  --f-size: 1rem;
+                "
+              >
+                <div class="slider-list">
+                  <div class="slider-item" style="--position: 1">
+                    <img src="assets/skills/next-js.png" alt="" />
+                  </div>
+                  <div class="slider-item" style="--position: 2">
+                    <img src="assets/skills/typescript.png" alt="" />
+                  </div>
+                  <div class="slider-item" style="--position: 3">
+                    <img src="assets/skills/tailwind.png" alt="" />
+                  </div>
+                  <div class="slider-item" style="--position: 4">
+                    <img src="assets/skills/postgreSQL.png" alt="" />
+                  </div>
+                  <div class="slider-item" style="--position: 5">
+                    <img src="assets/skills/prisma.png" alt="" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-links">
+                <a
+                  href="https://expedite-dev.vercel.app/"
+                  target="_blank"
+                  class="link-button"
+                  >Website</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- second project -->
+          <div class="project-card">
+            <div class="card-image">
+              <img
+                src="assets/projects/kasirkeun.png"
+                alt="Project Kasirkeun"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Kasirkeun</h3>
+              <p>
+                Kasirkeun is a transaction management application designed
+                specifically for shop cashiers, with three main pages:
+                Transactions, Management, and History.
+              </p>
+              <div
+                class="slider"
+                style="
+                  --width: 3rem;
+                  --height: 3rem;
+                  --quantity: 3;
+                  --f-size: 1rem;
+                "
+              >
+                <div class="slider-list">
+                  <div class="slider-item" style="--position: 1">
+                    <img src="assets/skills/python.png" alt="" />
+                  </div>
+                  <div class="slider-item" style="--position: 2">
+                    <img src="assets/skills/flet.png" alt="" />
+                  </div>
+                  <div class="slider-item" style="--position: 3">
+                    <img src="assets/skills/SQLite.png" alt="" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-links">
+                <a
+                  href="https://gitlab.informatika.org/scifo04/if2250-2024-k02-g07-kasirkeun"
+                  target="_blank"
+                  class="link-button"
+                  >Gitlab</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Third project -->
+          <div class="project-card">
+            <div class="card-image">
+              <img src="assets/projects/farm-game.png" alt="" />
+            </div>
+            <div class="card-content">
+              <h3>Farm Game Simulation</h3>
+              <p>
+                Developed a farm game based on desktop using Java with GUI. This
+                project implement SOLID in OOP and design pattern with best
+                practice.
+              </p>
+              <div
+                class="slider"
+                reverse="true"
+                style="
+                  --width: 3rem;
+                  --height: 3rem;
+                  --quantity: 2;
+                  --f-size: 1rem;
+                "
+              >
+                <div class="slider-list">
+                  <div class="slider-item" style="--position: 1">
+                    <img src="assets/skills/java.png" alt="java logo" />
+                  </div>
+                  <div class="slider-item" style="--position: 2">
+                    <img src="assets/skills/gradle.png" alt="gradle logo" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-links">
+                <a
+                  href="https://github.com/BertoRichardo/IF2210_TB2_LBR"
+                  target="_blank"
+                  class="link-button"
+                  >Github</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- fourth project -->
+          <div class="project-card">
+            <div class="card-image">
+              <img src="assets/projects/wikirace.png" alt="wikirace project" />
+            </div>
+            <div class="card-content">
+              <h3>Wikirace</h3>
+              <p>
+                Wikirace is a game that player need to find shortest route from
+                one title to another title in wikipedia. This project scraping
+                wikipedia from link to link using BFS and IDS Algorithm using
+                Go.
+              </p>
+              <div
+                class="slider"
+                style="
+                  --width: 3rem;
+                  --height: 3rem;
+                  --quantity: 2;
+                  --f-size: 1rem;
+                "
+              >
+                <div class="slider-list">
+                  <div class="slider-item" style="--position: 1">
+                    <img src="assets/skills/react.png" alt="react logo" />
+                  </div>
+                  <div class="slider-item" style="--position: 2">
+                    <img src="assets/skills/go.png" alt="go logo" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-links">
+                <a
+                  href="https://github.com/BertoRichardo/Tubes2_Wikibowo"
+                  target="_blank"
+                  class="link-button"
+                  >Github</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <p class="section-header">Get in Touch</p>
+        <h1 class="section-title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/contact/mail.png"
+              alt="Email icon"
+              class="contact-icon"
+            />
+            <p>
+              <a href="mailto:bertotogatorop27@gmail.com" target="_blank"
+                >Mail</a
+              >
+            </p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/contact/linkedin.png"
+              alt="LinkedIn icon"
+              class="contact-icon"
+            />
+            <p>
+              <a
+                href="https://www.linkedin.com/in/berto-richardo-togatorop-b297b8284/"
+                target="_blank"
+                >LinkedIn</a
+              >
+            </p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/skills/github.png"
+              alt="LinkedIn icon"
+              class="contact-icon"
+            />
+            <p>
+              <a href="https://github.com/BertoRichardo" target="_blank"
+                >Github</a
+              >
+            </p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/contact/instagram.png"
+              alt="LinkedIn icon"
+              class="contact-icon"
+            />
+            <p>
+              <a href="https://instagram.com/richardo.berto_" target="_blank"
+                >Instagram</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
